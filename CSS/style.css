@@ -13,10 +13,11 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100vh;
+  background-color: #386641;
 }
 
 body .container {
-  background-color: brown;
+  background-color: #6a994e;
   width: 55%;
   height: 90vh;
   border-radius: 10px;
@@ -27,6 +28,12 @@ body .container {
 }
 
 body .container .image-card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a7c957;
   cursor: pointer;
   border-radius: 5px;
   margin: 5px;
@@ -34,13 +41,25 @@ body .container .image-card {
   transition: .2s;
 }
 
+body .container .image-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 body .container .image-card:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
+body .container .image-card:hover:nth-child(1) {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 body .container #bg-image {
-  background-color: cadetblue;
+  background-color: #a7c957;
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
   -ms-grid-column: 1;
@@ -49,7 +68,6 @@ body .container #bg-image {
 }
 
 body .container #sm-image1 {
-  background-color: #77da06;
   -ms-grid-row: 6;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -57,7 +75,6 @@ body .container #sm-image1 {
 }
 
 body .container #sm-image2 {
-  background-color: #a56818;
   -ms-grid-row: 6;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -65,7 +82,6 @@ body .container #sm-image2 {
 }
 
 body .container #sm-image3 {
-  background-color: #212c2e;
   -ms-grid-row: 6;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -73,7 +89,6 @@ body .container #sm-image3 {
 }
 
 body .container #sm-image4 {
-  background-color: #8e33c4;
   -ms-grid-row: 6;
   -ms-grid-row-span: 2;
   -ms-grid-column: 4;
@@ -81,7 +96,6 @@ body .container #sm-image4 {
 }
 
 body .container #sm-image5 {
-  background-color: #aeafae;
   -ms-grid-row: 8;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -89,7 +103,6 @@ body .container #sm-image5 {
 }
 
 body .container #sm-image6 {
-  background-color: #4b3721;
   -ms-grid-row: 8;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -97,7 +110,6 @@ body .container #sm-image6 {
 }
 
 body .container #sm-image7 {
-  background-color: #3d4b2e;
   -ms-grid-row: 8;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -105,7 +117,6 @@ body .container #sm-image7 {
 }
 
 body .container #sm-image8 {
-  background-color: #0662da;
   -ms-grid-row: 8;
   -ms-grid-row-span: 2;
   -ms-grid-column: 4;

@@ -6,10 +6,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
+    background-color: #386641;
 
 
     .container {
-        background-color: brown;
+        background-color: #6a994e;
         width: 55%;
         height: 90vh;
         border-radius: 10px;
@@ -26,48 +27,54 @@ body {
         grid-gap: 5px;
                              
         .image-card {
+            align-items: center;
+            padding: 0;
+            overflow: hidden;
+            background-color: #a7c957;
             cursor: pointer;
             border-radius: 5px;
             margin: 5px;
             transition: .2s;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         } 
 
         .image-card:hover {
             transform: scale(1.1);
         } 
 
+        .image-card:hover:nth-child(1) {
+            transform: scale(1);
+        } 
+
         #bg-image {
-            background-color: cadetblue;
+            background-color: #a7c957;
             grid-area: b-image;
         }
 
         #sm-image1 {
-            background-color: rgb(119, 218, 6);
             grid-area: s-image1;
         }
         #sm-image2 {
-            background-color: rgb(165, 104, 24);
             grid-area: s-image2;
         }#sm-image3 {
-            background-color: rgb(33, 44, 46);
             grid-area: s-image3;
         }
         #sm-image4 {
-            background-color: rgb(142, 51, 196);
             grid-area: s-image4;
         }
         #sm-image5 {
-            background-color: rgb(174, 175, 174);
             grid-area: s-image5;
         }#sm-image6 {
-            background-color: rgb(75, 55, 33);
             grid-area: s-image6;
         }
         #sm-image7 {
-            background-color: rgb(61, 75, 46);
             grid-area: s-image7;
         }#sm-image8 {
-            background-color: rgb(6, 98, 218);
             grid-area: s-image8;
         }
     }
